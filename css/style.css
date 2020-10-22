@@ -1,0 +1,21 @@
+body {
+    background-color: #e5e5e5;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2.section-title {
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+}
+
+/* npm install normalize.css */
