@@ -1,5 +1,5 @@
 body {
-    background-color: #354147;
+    background-color: #0B1D26;
     font-family: 'Gilroy';
     font-weight: 700;
     font-size: 18px;
@@ -118,4 +118,48 @@ img.header-slider {
 }
 .header-text p i {
     margin-left: 10px;
+}
+.level-1 {
+    position: relative;
+    top: -440px;
+    background-image: url('../img/level-back-1.png');
+    background-repeat: no-repeat;
+    background-position-y: 70px;
+    height: 240px;
+    margin-bottom: 200px;
+}
+.level-1-content, .level-2-content, .level-3-content {
+    display: flex;
+    justify-content: space-between;
+}
+.level-1-text {
+    max-width: 732px;
+    padding-left: 150px;
+    padding-top: 141px;
+}
+.level-2 {
+    margin-bottom: 200px;
+    background-image: url('../img/level-back-2.png');
+    background-repeat: no-repeat;
+    background-position-x: 57%;
+    background-position-y: 60px;
+}
+.level-2-text {
+    max-width: 632px;
+    padding-top: 141px;
+}
+
+
+
+.level-1-text p, .level-2-text p, .level-3-text p {
+    margin-bottom: 27px;
+    
+}
+.level-1-text a, .level-2-text a, .level-3-text a {
+    color: #FBD784;
+    display: flex;
+    align-items: center;
+}
+.level-1-text a i, .level-2-text a i, .level-3-text a i {
+    margin-left: 16px;
 }
