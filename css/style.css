@@ -38,7 +38,7 @@ span.for-title::before {
     width: 72px;
     height: 2px;
     background-color: #FBD784;
-    top: 50%;
+    bottom: 50%;
 }
 .header {
     background: url('../img/background-5.png'), url('../img/background-4.png'), url('../img/background-2.png'), url('../img/background-3.png'), url('../img/background-1.png');
@@ -55,6 +55,12 @@ span.for-title::before {
     justify-content: space-between;
     margin-bottom: 198px;
 }
+.header-top img {
+    z-index: 3;
+}
+.burger-menu {
+    display: none;
+}
 ul.main-nav {
     display: flex;
     position: relative;
@@ -63,6 +69,7 @@ ul.main-nav {
 ul.main-nav li.main-nav-item:nth-child(2) {
     margin: 0 40px;
 }
+
 ul.main-nav li.main-nav-item {
     padding-bottom: 10px;
     border: 2px solid transparent;
@@ -81,13 +88,24 @@ a.account {
 a.account img {
     margin-right: 8px;
 } 
+.menu {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+.menu a {
+    margin-right: 20px;
+}
+
 .header-middle {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
 }
 .header-social {
-    position: relative;
+    position: fixed;
+    z-index: 3;
+    left: 80px;
     width: 24px;
     height: 173px;
     display: flex;
@@ -119,20 +137,27 @@ img.header-slider {
 .header-text p i {
     margin-left: 10px;
 }
-.level-1 {
+img.header-slider {
+    position: fixed;
+    right: 80px;
+    z-index: 3;
+}
+.main {
     position: relative;
     top: -440px;
+
+}
+.level-1 {
     background-image: url('../img/level-back-1.png');
     background-repeat: no-repeat;
     background-position-y: 70px;
-    height: 240px;
     margin-bottom: 200px;
 }
 .level-1-content, .level-2-content, .level-3-content {
     display: flex;
     justify-content: space-between;
 }
-.level-1-text {
+.level-1-text, .level-3-text {
     max-width: 732px;
     padding-left: 150px;
     padding-top: 141px;
@@ -148,9 +173,11 @@ img.header-slider {
     max-width: 632px;
     padding-top: 141px;
 }
-
-
-
+.level-3 {
+    background-image: url('../img/level-back-3.png');
+    background-repeat: no-repeat;
+    background-position-y: 70px;
+}
 .level-1-text p, .level-2-text p, .level-3-text p {
     margin-bottom: 27px;
     
@@ -162,4 +189,49 @@ img.header-slider {
 }
 .level-1-text a i, .level-2-text a i, .level-3-text a i {
     margin-left: 16px;
+}
+.footer {
+    position: relative;
+    top: -240px;
+    height: 60px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-info {
+    max-width: 347px;
+}
+.footer-info img {
+    margin-bottom: 24px;
+}
+.footer-info p.footer-info-text {
+    margin-bottom: 122px;
+}
+.footer-info p.copyright {
+    font-weight: 500;
+    color: grey
+}
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+li.footer-menu-title {
+    font-size: 24px;
+    color: #FBD784;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+ul.footer-nav:last-child {
+    margin-left: 212px;
+}
+ul.footer-nav li {
+    margin-bottom: 16px;
+}
+
+ul.footer-nav li a {
+    font-weight: 500;
+    color: #fff;
+    
 }
